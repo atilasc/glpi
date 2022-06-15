@@ -245,7 +245,7 @@ abstract class AbstractConfigureCommand extends AbstractCommand implements Force
         $db_exists = @$mysqli->select_db($db_name);
 
         ob_start();
-        $db_version_data = $mysqli->query('SELECT version();')->fetch_array();
+        $db_version_data = $mysqli->query('SELECT version()')->fetch_array();
         $checkdb = Config::displayCheckDbEngine(false, $db_version_data[0]);
         $message = ob_get_clean();
         if ($checkdb > 0) {
