@@ -1635,7 +1635,7 @@ class DBmysql
      */
     public function getVersion()
     {
-        $req = $this->request('SELECT version()')->current();
+        $req = $this->request('SELECT version();')->current();
         $raw = $req['version()'];
         return $raw;
     }
