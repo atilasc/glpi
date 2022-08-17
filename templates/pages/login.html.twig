@@ -70,13 +70,13 @@
             {% endif %}
 
             {% if config('display_login_source') %}
-               <div class="mb-3"  style="display: none; !important">
+               <div class="mb-3">
                   <label class="form-label">{{ __('Login source') }}</label>
                   {{ auth_dropdown_login|raw }}
                </div>
             {% endif %}
 
-{#          {% if config('login_remember_time') %}
+            {% if config('login_remember_time') %}
                <div class="mb-2">
                   <label class="form-check">
                      <input type="checkbox" class="form-check-input" name="{{ rmbfield }}" {{ config('login_remember_default') ? 'checked' : '' }} />
@@ -84,7 +84,7 @@
                   </label>
                </div>
             {% endif %}
-#}
+
             <div class="form-footer">
                <button type="submit" name="submit" class="btn btn-primary w-100" tabindex="3">
                   {{ __('Sign in') }}
