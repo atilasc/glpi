@@ -24628,7 +24628,7 @@ body .flatpickr-time input:hover, body .flatpickr-time .flatpickr-am-pm:hover, b
   color: #f3eae9;
 }
 .sidebar, .topbar {
-  background-color: #a2291f;
+  background-color: #831d1c;
   color: #f3eae9;
   z-index: 1030;
 }
@@ -24747,10 +24747,10 @@ body .flatpickr-time input:hover, body .flatpickr-time .flatpickr-am-pm:hover, b
   }
   body.navbar-collapsed .sidebar #navbar-menu .nav-item .nav-link + .dropdown-menu {
     background-color: #f3eae9;
-    color: #a2291f;
+    color: #831d1c;
     top: 0;
     left: calc(100% + 1px);
-    border: 1px solid #a2291f;
+    border: 1px solid #831d1c;
     position: absolute;
     z-index: 1050;
   }
